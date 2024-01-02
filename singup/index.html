@@ -28,7 +28,7 @@
     
         </div>
         <div class="input-field">
-            <input type="tel" id="phoneNumber" placeholder="شماره تلفن" class="input-field-input" maxlength="13">
+            <input type="tel" id="phoneNumber" placeholder="شماره تلفن" class="input-field-input" maxlength="15">
             <div class="input-field-border"></div>
             <label class="input-field-label">
                 <span>شماره تلفن</span>
@@ -48,11 +48,11 @@
       var countrySelect = document.getElementById("countrySelect");
       var phoneNumberInput = document.getElementById("phoneNumber");
       countrySelect.value = "Iran";
-      phoneNumberInput.value = "+98";
+      phoneNumberInput.value = "+98 ";
       countrySelect.addEventListener("change", function () {
           var selectedCountry = countrySelect.value;
           if (selectedCountry === "Iran") {
-              phoneNumberInput.value = "+98";
+              phoneNumberInput.value = "+98 ";
           } else {
               phoneNumberInput.value = ""; 
           }
